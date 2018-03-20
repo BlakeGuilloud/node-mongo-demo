@@ -1,0 +1,24 @@
+{
+  "name": "node-mongo-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Blake Guilloud <blake.guilloud@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.2",
+    "nodemon": "^1.17.2"
+  }
+}
